@@ -520,6 +520,7 @@ footer p.made_by a {text-decoration: none;color:#757575;}
 .callback_popup .the_form .the_form_div.the_form_div_half:nth-child(2) {}
 .callback_popup .the_form .the_form_div.the_form_div_small {width:110px;}
 .callback_popup .the_form .the_form_div input[type="text"] {display: block;box-sizing:border-box;font-size:13px;height:38px;background:transparent;border-radius:0px;border:0;border-bottom:1px solid #fff;width:100%;padding:0 0px; outline:none;font-family: "ProximaNova", sans-serif;color:#fff; font-display: swap;}
+.callback_popup .the_form .the_form_div.has-error input[type=text] {border-bottom: 1px solid red;}
 .callback_popup .the_form .the_form_div input[type="text"]::-webkit-input-placeholder {color:#fff;font-size:13px;font-family: "ProximaNova", sans-serif; font-display: swap;}
 .callback_popup .the_form .the_form_div input[type="text"]:-moz-placeholder {color:#fff;font-size:13px;font-family: "ProximaNova", sans-serif; font-display: swap;}
 .callback_popup .the_form .the_form_div label {display: block;font-size:11px;color:#fff;margin:0 0 6px 0;padding:0;text-transform:none;}
@@ -810,3 +811,7 @@ border-radius:100%;box-sizing:border-box;background:url(../img/arrow.png) no-rep
 background:url(../img/pdf_icon1.png) no-repeat 0 center;font-weight:600;text-decoration:none;}
 .bank_grid li a.pdf_ref span {display:inline-block;border-bottom:1px dashed #b9d2f1;line-height:1.2em;color:#1c76ce;transition:all 0.4s;font-weight:600;}
 .bank_grid li a.pdf_ref:hover span {border-color:transparent;}
+
+.photo_upload_block .the_form .the_form_item.has-error input[type=text], .bottom_form_block .the_form .the_form_item.has-error input[type=text], .popup.call_popup .the_form .the_form_item.has-error input[type=text] {
+    background: url(/assets/template/img/red_dots.png) repeat-x 0 bottom;
+}
