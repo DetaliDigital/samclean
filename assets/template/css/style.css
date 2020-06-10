@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/Icomoon/icomoon.eot?2y82u2');
+    src:  url('../fonts/Icomoon/icomoon.eot?2y82u2#iefix') format('embedded-opentype'),
+    url('../fonts/Icomoon/icomoon.ttf?2y82u2') format('truetype'),
+    url('../fonts/Icomoon/icomoon.woff?2y82u2') format('woff'),
+    url('../fonts/Icomoon/icomoon.svg?2y82u2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-divan:before {
+    content: "\e900";
+}
+.icon-kover:before {
+    content: "\e901";
+}
+.icon-matras:before {
+    content: "\e902";
+}
+.icon-okna:before {
+    content: "\e903";
+}
+.icon-vitrini:before {
+    content: "\e904";
+}
+
 * {
 margin:0;
 padding:0;
@@ -141,10 +184,9 @@ header {margin-bottom:0px;/*position:absolute;width:100%;z-index:4;*/background:
 .header_menu_block {clear: both;background-color: #303030;color:#fff;}
 .header_menu {}
 .header_menu > ul {list-style: none;font-size:0;margin-left:0px;}
-.header_menu > ul > li {display: inline-block;vertical-align: middle;font-size:0px;position: relative;padding:12px 21px 13px 21px;}
-.header_menu > ul > li > a {display:block;text-decoration:none;font-size:18px;font-weight:600;line-height:26px;color:#fff;text-transform:none;padding:5px 0px 5px 40px;transition: all 0.4s;position: relative;}
+.header_menu > ul > li {display: inline-flex; align-items: center; position: relative;}
+.header_menu > ul > li > a {display:block;text-decoration:none;font-size:18px;font-weight:600;line-height:26px;color:#fff;text-transform:none;transition: all 0.4s;position: relative;}
 .header_menu > ul > li.has_dropdown:hover > a:after {background:url(../img/green_menu_arrow.png) no-repeat center bottom;content:" ";display: block;width:12px;height:10px;width:100%;height:60px;position: absolute;left:0%;top:0%;margin:27px 0 0 0px;z-index:1000;}
-.header_menu > ul > li > a:before {content: " ";display: block;position: absolute;top:50%;margin-top:-15px;left:0;width:36px;height:30px;background-repeat: no-repeat;background-position: center center;}
 .header_menu > ul > li > a span {display: inline;background-image: linear-gradient(to right, transparent 0%, transparent 100%);  background-position: 0 1.19em;  background-repeat: repeat-x;  background-size: 8px 1px;}
 .header_menu > ul > li.active > a span {display: inline;background-image: linear-gradient(to right, #645833 0%, #645833 100%);}
 .header_menu > ul > li:hover > a span {display: inline;background-image: linear-gradient(to right, #645833 0%, #645833 100%);}
@@ -157,30 +199,6 @@ header {margin-bottom:0px;/*position:absolute;width:100%;z-index:4;*/background:
 .header_menu > ul > li:hover {}
 .header_menu > ul > li.active > a {color:#ffcf3c;}
 .header_menu > ul > li:hover > a {color:#ffcf3c;}
-
-.header_menu > ul > li:nth-child(1) > a:before {background-image: url(../img/menu1.png);}
-.header_menu > ul > li:nth-child(2) > a:before {background-image: url(../img/menu2.png);}
-.header_menu > ul > li:nth-child(3) > a:before {background-image: url(../img/menu3.png);}
-.header_menu > ul > li:nth-child(4) > a:before {background-image: url(../img/menu4.png);}
-.header_menu > ul > li:nth-child(5) > a:before {background-image: url(../img/menu5.png);}
-.header_menu > ul > li:nth-child(6) > a:before {background-image: url(../img/menu6.png);}
-.header_menu > ul > li:nth-child(7) > a:before {background-image: url(../img/menu7n.png);}
-
-.header_menu > ul > li:nth-child(1):hover > a:before {background-image: url(../img/menu1_h.png);}
-.header_menu > ul > li:nth-child(2):hover > a:before {background-image: url(../img/menu2_h.png);}
-.header_menu > ul > li:nth-child(3):hover > a:before {background-image: url(../img/menu3_h.png);}
-.header_menu > ul > li:nth-child(4):hover > a:before {background-image: url(../img/menu4_h.png);}
-.header_menu > ul > li:nth-child(5):hover > a:before {background-image: url(../img/menu5_h.png);}
-.header_menu > ul > li:nth-child(6):hover > a:before {background-image: url(../img/menu6_h.png);}
-.header_menu > ul > li:nth-child(7):hover > a:before {background-image: url(../img/menu7n_h.png);}
-
-.header_menu > ul > li:nth-child(1).active > a:before {background-image: url(../img/menu1_h.png);}
-.header_menu > ul > li:nth-child(2).active > a:before {background-image: url(../img/menu2_h.png);}
-.header_menu > ul > li:nth-child(3).active > a:before {background-image: url(../img/menu3_h.png);}
-.header_menu > ul > li:nth-child(4).active > a:before {background-image: url(../img/menu4_h.png);}
-.header_menu > ul > li:nth-child(5).active > a:before {background-image: url(../img/menu5_h.png);}
-.header_menu > ul > li:nth-child(6).active > a:before {background-image: url(../img/menu6_h.png);}
-.header_menu > ul > li:nth-child(7).active > a:before {background-image: url(../img/menu7n_h.png);}
 
 .header_menu > ul > li > ul {z-index:999;list-style: none;padding:20px 0 0 25px;box-sizing:border-box;background:#e5e5e5;position:absolute;left:0%;top:100%;width:228px;display:none;box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);}
 .header_menu > ul > li:hover > ul {display: block;}
