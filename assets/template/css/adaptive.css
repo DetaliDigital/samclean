@@ -162,6 +162,8 @@ body.mobile_menu_is_open {    overflow: hidden;    padding: 0;    margin: 0;    
 
 
 	.popular_slider_item {width:16.6%;float:left;}
+	
+	.top_banner_item {    max-height: 390px;}
 
 }
 
@@ -509,6 +511,10 @@ body.mobile_menu_is_open {    overflow: hidden;    padding: 0;    margin: 0;    
 	.bank_grid li .img {border:0;}
 	.bank_grid li {height:auto;padding:10px 0 !important;}
 	.bank_grid li .item_right {float:right;width:200px;padding-top:15px;}
+	
+	.the_content_section_left .slick-slider.content_slider {display:block;}
+	
+	.content_gallery_comparison .gal-col-6 {width:100%;flex-basis: 100%;}
 
 }
 

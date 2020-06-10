@@ -815,3 +815,15 @@ background:url(../img/pdf_icon1.png) no-repeat 0 center;font-weight:600;text-dec
 .photo_upload_block .the_form .the_form_item.has-error input[type=text], .bottom_form_block .the_form .the_form_item.has-error input[type=text], .popup.call_popup .the_form .the_form_item.has-error input[type=text] {
     background: url(/assets/template/img/red_dots.png) repeat-x 0 bottom;
 }
+
+.the_content_section_left .slick-slider .content_slider_item .img {height:auto;}
+
+.content_gallery_comparison {margin-bottom:25px;}
+.content_gallery_comparison .content_portfolio_inner {padding-bottom:0;padding-left: 10px;padding-right: 10px;}
+.content_gallery_comparison .gal-col-6 {margin-bottom:20px; margin-left:10px;margin-right:10px;   flex: 1;padding: 0 0px;flex-basis: 46%;}
+.content_gallery_comparison .cd-image-container {    position: relative;    width: 100%;    max-width: initial;    margin: 0em auto;}
+
+
+
+
+
