@@ -112,9 +112,7 @@
             </section><!--/popular_section-->
         {/if}
 
-        {if $_modx->user.id > 0}
             {'faq_section' | chunk}
-        {/if}
 
         <section class="how_we_work_section">
             <div class="inner_section clearfix">

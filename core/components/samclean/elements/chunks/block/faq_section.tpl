@@ -1,7 +1,9 @@
 <section class="faq_section">
     <div class="inner_section clearfix">
 
-        <h2>{$_modx->resource.title}</h2>
+        {if $_modx->resource.section_faq_title ?}
+        <h2>{$_modx->resource.section_faq_title}</h2>
+        {/if}
 
         {set $rows = json_decode($_modx->resource.section_faq_migx, true)}
 
