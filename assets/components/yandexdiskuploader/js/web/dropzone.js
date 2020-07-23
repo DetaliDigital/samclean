@@ -27,9 +27,9 @@
 
 (function() {
   var Dropzone, Emitter, ExifRestore, camelize, contentLoaded, detectVerticalSquash, drawImageIOSFix, noop, without,
-    slice = [].slice,
-    extend1 = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
+      slice = [].slice,
+      extend1 = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+      hasProp = {}.hasOwnProperty;
 
   noop = function() {};
 
@@ -105,9 +105,9 @@
 
     /*
     This is a list of all available events you can register on a dropzone object.
-    
+
     You can register an event handler like this:
-    
+
         dropzone.on("dragEnter", function() { });
      */
 
@@ -120,7 +120,7 @@
       timeout: 30000,
       parallelUploads: 2,
       uploadMultiple: false,
-      maxFilesize: 256,
+      maxFilesize: 5,
       paramName: "file",
       createImageThumbnails: true,
       maxThumbnailFilesize: 10,
@@ -133,7 +133,7 @@
       resizeQuality: 0.8,
       resizeMethod: 'contain',
       filesizeBase: 1000,
-      maxFiles: null,
+      maxFiles: 5,
       params: {},
       headers: null,
       clickable: true,
@@ -152,7 +152,7 @@
       dictDefaultMessage: "Drop files here to upload",
       dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
       dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
-      dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
+      dictFileTooBig: "Файл слишком большой ({{filesize}}Mб). Максимальный размер: {{maxFilesize}}Mб.",
       dictInvalidFileType: "You can't upload files of this type.",
       dictResponseError: "Server responded with {{statusCode}} code.",
       dictCancelUpload: "Cancel upload",
@@ -248,6 +248,7 @@
         if ((this.options.resizeWidth || this.options.resizeHeight) && file.type.match(/image.*/)) {
           return this.resizeImage(file, this.options.resizeWidth, this.options.resizeHeight, this.options.resizeMethod, done);
         } else {
+          console.log('success');
           return done(file);
         }
       },
@@ -285,6 +286,7 @@
         var j, k, l, len, len1, len2, node, ref, ref1, ref2, removeFileEvent, removeLink, results;
         if (this.element === this.previewsContainer) {
           this.element.classList.add("dz-started");
+
         }
         if (this.previewsContainer) {
           file.previewElement = Dropzone.createElement(this.options.previewTemplate.trim());
@@ -294,6 +296,16 @@
           for (j = 0, len = ref.length; j < len; j++) {
             node = ref[j];
             node.textContent = file.name;
+            $('.uploader-backdrop').hide();
+            $('.dz-preview').not(':first').remove();
+            let count = $('.success-image');
+            if (count.length > 5){
+
+              $("body").overhang({
+                type: "success",
+                message: "Вы не можете отправлять более 5 файлов."
+              });
+            }
           }
           ref1 = file.previewElement.querySelectorAll("[data-dz-size]");
           for (k = 0, len1 = ref1.length; k < len1; k++) {
@@ -342,6 +354,7 @@
         return this._updateMaxFilesReachedClass();
       },
       thumbnail: function(file, dataUrl) {
+
         var j, len, ref, thumbnailElement;
         if (file.previewElement) {
           file.previewElement.classList.remove("dz-file-preview");
@@ -378,6 +391,7 @@
       processing: function(file) {
         if (file.previewElement) {
           file.previewElement.classList.add("dz-processing");
+
           if (file._removeLink) {
             return file._removeLink.textContent = this.options.dictCancelUpload;
           }
@@ -418,6 +432,61 @@
           file._removeLink.textContent = this.options.dictRemoveFile;
         }
         if (file.previewElement) {
+          let check = $('#image-info');
+          let count = $('.success-image');
+          if (count.length < 5){
+            if (file.size < this.options.maxFilesize * 1024 * 1024) {
+              // console.log(check);
+              if (check.length != 0)
+              {
+
+                let content = "<p class=\"success-image\" style=\"font-size:13px;\"><i class=\"fas fa-check fa-sm\" style=\"margin-right:5px; color: yellowgreen;\"></i><span style=\"font-family: Roboto; color: #000000; margin-right: 10px;\">" + file.name.substring(0,5) + '...' + "</span>" + "<span style=\"font-size: 11px; color: #848383;\">" + (this.filesize(file.size)) + "</span></p>";
+                check.prepend(content);
+                // console.log($('af_files'));
+              }
+              else{
+                let info = $('.dz-image');
+                let content = "<div style=\"height: 100%; display: flex; align-items: center; justify-content: center;\"><div id=\"image-info\"><p class=\"success-image\" style=\"font-size:13px;\"><i class=\"fas fa-check fa-sm\" style=\"margin-right:5px; color: yellowgreen;\"></i><span style=\"font-family: Roboto; color: #000000; margin-right: 10px;\">" + file.name.substring(0,5) + '...' + "</span>" + "<span style=\"font-size: 11px; color: #848383;\">" + (this.filesize(file.size)) + "</span></p></div></div>";
+                info.html('');
+                // console.log(content);
+                info.append(content);
+                $('.dz-details').hide();
+                setTimeout(function(){
+                  $('.btn-more').show(200);
+                  document.getElementById('add-more').style.height = "35px;"
+                },2000)
+
+              }
+            }
+            else
+            {
+              if (check.length != 0)
+              {
+
+                let content = "<p class=\"success-image\" style=\"font-size:13px;\"><i class=\"fas fa-times fa-sm\" style=\"margin-right:5px; color: red;\"></i><span style=\"font-family: Roboto; color: #000000; margin-right: 10px;\">" + file.name.substring(0,5) + '...' + "</span>" + "<span style=\"font-size: 11px; color: #848383;\">" + (this.filesize(file.size)) + "</span></p>";
+                check.prepend(content);
+                // console.log($('af_files'));
+              }
+              else{
+                let info = $('.dz-image');
+                let content = "<div style=\"height: 100%; display: flex; align-items: center; justify-content: center;\"><div id=\"image-info\"><p class=\"success-image\" style=\"font-size:13px;\"><i class=\"fas fa-times fa-sm\" style=\"margin-right:5px; color: red;\"></i><span style=\"font-family: Roboto; color: #000000; margin-right: 10px;\">" + file.name.substring(0,5) + '...' + "</span>" + "<span style=\"font-size: 11px; color: #848383;\">" + (this.filesize(file.size)) + "</span></p></div></div>";
+                info.html('');
+                // console.log(content);
+                info.append(content);
+                $('.dz-details').hide();
+                setTimeout(function(){
+                  $('.btn-more').show(200);
+                  document.getElementById('add-more').style.height = "35px;"
+                },2000)
+
+              }
+            }
+          }
+          if(count.length >= 4)
+          {
+            $('.btn-more').hide(200);
+            document.getElementById('add-more').style.height = "0px;"
+          }
           return file.previewElement.classList.add("dz-complete");
         }
       },
@@ -509,6 +578,13 @@
     Dropzone.prototype.getAcceptedFiles = function() {
       var file, j, len, ref, results;
       ref = this.files;
+      if(ref.length > this.options.maxFiles)
+      {
+        $("body").overhang({
+          type: "error",
+          message: "Вы не можете отправлять более 5 файлов!"
+        });
+      }
       results = [];
       for (j = 0, len = ref.length; j < len; j++) {
         file = ref[j];
@@ -891,10 +967,12 @@
     };
 
     Dropzone.prototype._updateMaxFilesReachedClass = function() {
+
       if ((this.options.maxFiles != null) && this.getAcceptedFiles().length >= this.options.maxFiles) {
         if (this.getAcceptedFiles().length === this.options.maxFiles) {
           this.emit('maxfilesreached', this.files);
         }
+
         return this.element.classList.add("dz-max-files-reached");
       } else {
         return this.element.classList.remove("dz-max-files-reached");
@@ -1786,7 +1864,7 @@
 
 
   /*
-  
+
   Bugfix for iOS 6 and 7
   Source: http://stackoverflow.com/questions/11929099/html5-canvas-drawimage-ratio-bug-ios
   based on the work of https://github.com/stomita/ios-imagefile-megapixel
@@ -2050,3 +2128,4 @@
   contentLoaded(window, Dropzone._autoDiscoverFunction);
 
 }).call(this);
+
