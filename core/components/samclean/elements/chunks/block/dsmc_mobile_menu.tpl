@@ -31,7 +31,7 @@
 
     <li class="rollover_contacts">
 
-        <p class="phone"><a href="tel:{$_modx->config.phone | preg_replace:'/[^0-9]|/': ''}">{$_modx->config.phone}</a>
+        <p class="phone"><a href="tel:{$_modx->config.phone | preg_replace:'/[^0-9].+|/': ''}">{$_modx->config.phone}</a>
 
         </p>
 
