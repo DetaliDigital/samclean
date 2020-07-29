@@ -88,7 +88,7 @@
         </div><!--/header_search-->
 
         <div class="header_right clearfix">
-            <p class="phone"><a href="tel:{$_modx->config.phone | preg_replace:'/[^0-9].+|/': ''}"><span>{$_modx->config.phone}</span></a>
+            <p class="phone"><a href="tel:{$_modx->config.phone | preg_replace:'/[^0-9.+]|/': ''}"><span>{$_modx->config.phone}</span></a>
 
             </p>
 
