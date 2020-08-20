@@ -687,6 +687,26 @@ $(document).ready(function() {
 
 	}
 
+	//elements rearrangement on mobile
+	if ($(window).width() < 1024) {
+		if ($(".navbar-slider").length) {
+			var b_slider = $(".navbar-slider").slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: false,
+				//autoplay: true,
+				// autoplaySpeed: 2000,
+				slide: ".navbar-slider .nav-item",
+				respondTo:'slider',
+				swipeToSlide: true,
+				variableWidth: true,
+				touchThreshold: 25
+
+			});
+		}
+	}
+
 
 	if ($(window).width() < 1023) {
 

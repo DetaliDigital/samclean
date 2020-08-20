@@ -4,7 +4,6 @@
 
 <ul class="header_menu_mobile_main_categories_ul clearafter">
 
-
     {'!pdoMenu' | snippet : [
     'parents' => 0,
     'resources' => $tv_main,

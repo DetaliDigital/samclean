@@ -322,7 +322,6 @@ body.mobile_menu_is_open {    overflow: hidden;    padding: 0;    margin: 0;    
 	.header_search {width:100%;display: none;position: absolute;top:100%;left:0;box-sizing: border-box;z-index:5;padding:10px 10px;background:#2069cf;}
 	.header_search input[type="text"] {background:#fff;color:#000;}
 	.header_search.active {display: block;}
-	.header_menu_block {display: none;}
 	.mobile_menu_toggler {top:18px;left:5px;}
 	body .page_container .inner_header {padding-bottom: 2px;padding-left:10px;padding-right:10px;}
 	.roll_over_menu {top:71px;}

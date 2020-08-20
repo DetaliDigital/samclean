@@ -33,10 +33,10 @@
                                 <a href="{177 | url}" class="nav-link">Цены</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{178 | url}}" class="nav-link">Условия</a>
+                                <a href="{178 | url}" class="nav-link">Условия</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{8 | url}}" class="nav-link">Контакты</a>
+                                <a href="{8 | url}" class="nav-link">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -44,10 +44,10 @@
                 <div class="col-lg-3 mt-4 col-md-6">
                     <ul class="nav nav-resources">
                         <li class="nav-item">
-                            <a href="{12 | url}}" class="nav-link">Мытье окон</a>
+                            <a href="{12 | url}" class="nav-link">Мытье окон</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{13 | url}}" class="nav-link">Мойка витрин</a>
+                            <a href="{13 | url}" class="nav-link">Мойка витрин</a>
                         </li>
                     </ul>
                 </div>
