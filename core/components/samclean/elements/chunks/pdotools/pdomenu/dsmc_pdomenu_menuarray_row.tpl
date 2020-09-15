@@ -4,7 +4,7 @@
         <a href="#" class="footer-title block-toggler">{$item['menutitle'] ?: $item['pagetitle']}
         <span class="block-toggler-icon"></span>
         </a>
-        <ul class="nav">
+        <ul class="nav flex-column">
         {foreach $item['children'] as $children}
             {set $children['level'] = $item['level'] + 1}
             {$_modx->getChunk('dsmc.pdoMenu.menuArray.submenu_item.row' , ['item' => $children])}

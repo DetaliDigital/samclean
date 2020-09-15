@@ -141,16 +141,9 @@ section a.button {    display: block;    font-weight: 500;    font-size: 15px;  
 .header_top {display:none;}
 
 header {background:#006344;}
-header .logo {width:256px;}
 .inner_header {padding-top: 15px;    padding-bottom: 4px;}
-.logo span {width: 160px;}
 .logo span b {color:#fff;font-weight:bold;font-size:30px;padding-bottom: 0;line-height:1.1em;}
 .logo span i {color:#93be12;}
-
-.header_top_menu>ul>li {border:0;}
-.header_top_menu>ul>li>a {font-size:13px;color:#fff;padding: 10px 19px;border:0;}
-.header_top_menu>ul>li>a:hover {color: #93be12;}
-.header_top_menu>ul>li>a:after {display:none;}
 
 .header_top_menu {    padding-top: 0;    float: left;}
 .header_right a.callback_button {font-weight:bold;font-size:14px;color:#fff;background:#93be12;border-radius:20px;width:170px;height:42px;line-height:42px;}
@@ -588,7 +581,6 @@ box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);}
 @media only screen and (max-width:1170px) {
 
     .roll_over_menu {top:72px;background: #006344;}
-    header .logo {padding-left:0;padding-right:65px;width:320px;}
     .mobile_menu_toggler {left: 240px;    top: 10px;}
     .header_top_menu {display:none;}
     .logo img {margin-right:10px;}
@@ -683,8 +675,6 @@ box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);}
     .roll_over_menu .header_menu_mobile_main_categories_ul>li.ref_with_icon.last>a {    padding-bottom: 20px;    margin-bottom: 20px;    border-bottom: 0px solid #000;}
 
 
-    header.active {width:100%;box-sizing:border-box;position:fixed;top:0;left:0;z-index:99;}
-    .mobile_menu_toggler {position:fixed;}
     .roll_over_menu .header_menu_mobile_sub_categories_ul>li.form_li .the_form p.thanks_title span {color: #93be12;}
     .roll_over_menu .header_menu_mobile_sub_categories_ul>li.form_li .the_form .accept label a {color: #93be12;}
     .roll_over_menu .header_menu_mobile_sub_categories_ul>li.form_li .the_form .accept .ez-checkbox {background-image:url("/assets/template/img/checkbox11.png");width:16px;height:16px;}
@@ -740,7 +730,6 @@ box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);}
     .advantages_item:nth-child(4) {width:100% !important;}
     .advantages_item .text {width:200px !important;}
 
-    header .logo {    padding-left: 60px;    padding-right: 0px;    width: 210px;}
     header .logo span {    font-size: 9px;    width: 90px;}
     header .logo span b {font-size:17px;padding-bottom:4px;}
     header .logo span i {font-size:17px;}

@@ -25,7 +25,7 @@
                         <a href="#" class="footer-title block-toggler">О компании
                             <span class="block-toggler-icon"></span>
                         </a>
-                        <ul class="nav">
+                        <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a href="{3 | url}" class="nav-link">Наши работы</a>
                             </li>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mt-4 col-md-6">
-                    <ul class="nav nav-resources">
+                    <ul class="nav nav-resources flex-column">
                         <li class="nav-item">
                             <a href="{12 | url}" class="nav-link">Мытье окон</a>
                         </li>
@@ -70,8 +70,9 @@
                 <div class="col-lg-9 col-md-12 mx-5 mx-md-0">
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
-                            <p class="phone">
-                                <a href="tel:+78123091691" rel="nofollow">+7 (812) 309-16-91</a>
+                            <p class="phone flex flex column flex-wrap">
+                                <a href="tel:+78123091691" class="d-block" rel="nofollow">+7 (812) 309-16-91</a>
+                                <a href="tel:+78123091691" class="d-block" rel="nofollow">+7 (812) 309-16-91</a>
                             </p>
                         </div>
                         <div class="col-lg-4 col-md-4">
@@ -113,5 +114,5 @@
     </div>
 </footer>
 
-[[$popup_form]]
+{include 'popup_form'}
 

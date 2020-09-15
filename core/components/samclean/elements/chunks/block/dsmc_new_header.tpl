@@ -9,6 +9,7 @@
         </div>
     </div><!--/header_top-->
 
+    {*
     <div class="inner_header inner_section clearfix">
 
         <div class="logo">
@@ -99,6 +100,48 @@
         </div>
 
     </div><!--/inner_header-->
+    *}
+
+    <div class="container">
+        <div class="row align-items-center px-0 py-4">
+            <div class="col-3">
+                <div class="box box-brand logo mb-0 d-flex">
+                    <a href="{$_modx->config.base_url}">
+                        <div class="d-flex">
+                        <img src="{$_modx->config.assets_url}/template/img/logo.png" alt=""/>
+                            <div class="box-brand-text d-flex flex-column">
+                                <b class="box-brand-title"><span class="text-success-light">Sam</span>Clean</b>
+                                <span class="box-brand-name">
+                                {$_modx->config.name}
+                                    </span>
+                            </div>
+                        </div>
+                      </a>
+                </div>
+            </div>
+
+            <div class="col-5">
+                {'!pdoMenu' | snippet : [
+                'parents' => 0,
+                'resources' => $tv_top
+                'outerClass' => 'nav',
+                'rowClass' => 'nav-item',
+                'tpl' => 'dsmc.pdoMenu.row.inside'
+                ]}
+            </div>
+            <div class="col-4">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="box box-phone d-flex flex-column">
+                        <a href="#" class="box-phone-link">+7 (812) 309-16-91</a>
+                        <a href="#" class="box-phone-link">+7 (812) 309-16-91</a>
+                    </div>
+                    <div>
+                        <a href="#callback_popup" rel="nofollow" class="btn btn-green-light btn-pills"><span>Заказать звонок</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     {set $menu = 'pdoMenuArray' | snippet : [
     'parents' => '-3'

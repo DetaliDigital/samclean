@@ -195,7 +195,6 @@ body.mobile_menu_is_open {    overflow: hidden;    padding: 0;    margin: 0;    
 	.logo span {font-size: 12px;}
 	.logo span b {font-size: 30px;display: block;padding:0;}
 	.mobile_menu_toggler {display: block;}
-	.mobile_menu_toggler.active {  position: fixed;}
 	.advantages_item {margin-bottom: 35px;}
 	.advantages_section {margin-bottom: 10px;}
 	.advantages_item:nth-child(1) {width:245px;}

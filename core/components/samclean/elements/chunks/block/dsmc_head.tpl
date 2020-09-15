@@ -25,14 +25,15 @@
     {/if}
 
     <meta name="viewport" content="width=device-width">
-    <meta name="yandex-verification" content="002ab86786ff9e81" />
-    <meta name="yandex-verification" content="10c67d28e375050b" />
-    <meta name="yandex-verification" content="778abb63185cba1e" />
-    <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta name="yandex-verification" content="002ab86786ff9e81">
+    <meta name="yandex-verification" content="10c67d28e375050b">
+    <meta name="yandex-verification" content="778abb63185cba1e">
+    <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/template/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="{$minifycss}">
     <link rel="stylesheet" href="assets/template/css/codyhouse.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     {'!ga_head' | snippet}
     {'!jivosite' | snippet}
 </head>

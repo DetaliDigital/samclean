@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
+{extends 'template:Layout'}
 
-{include 'head'}
+{block 'main'}
 
-<body>
 
-{include 'section_callback_popup'}
-<div class="page_container main_page_container" id="top">
-    <div class="mobile_menu_toggler"></div>
-
-    {include 'header'}
     <div class="header_placeholder"></div>
 
     {if $_modx->resource.banner ?}
@@ -277,18 +270,4 @@
         {include 'bottom_form_section'}
 
     </section><!--/main-->
-
-    {include 'footer'}
-
-</div><!--/container-->
-
-<div class="popup thanks_popup" id="thanks_popup">
-    <div class="the_form">
-        <p class="form_title">Спасибо. Мы свяжемся с Вами в ближайшее время.</p>
-    </div>
-</div><!--/thanks_popup-->
-
-{include 'mobile_left_bar'}
-{include 'scripts'}
-</body>
-</html>
+{/block}

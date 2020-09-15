@@ -466,13 +466,6 @@ header {
     margin-right: 20px;
 }
 
-.logo span {
-    font-size: 13px;
-    color: #fff;
-    display: inline-block;
-    vertical-align: middle;
-    width: 190px;
-}
 
 .logo span b {
     font-weight: 600;
@@ -2217,12 +2210,10 @@ footer p.made_by a {
 .mobile_menu_toggler {
     display: none;
     z-index: 501;
-    position: absolute;
     top: 29px;
     left: 20px;
     background: url(../img/menu_open.png) no-repeat center center;
     width: 48px;
-    height: 40px;
 }
 
 .mobile_menu_toggler.active {
@@ -4581,6 +4572,7 @@ div:not(.callback_popup) .the_form input[type="text"]:focus {
 
 .footer .nav .nav-item .nav-link {
     font-size: 14px;
+    font-weight: 400;
     color: #000;
     text-decoration: none;
 }
@@ -4716,7 +4708,274 @@ footer .footer-block.bg-gray {
     }
 }
 
+/* Рефакторинг шапки */
+
+.box.box-brand {
+    text-decoration: none;
+}
+
+.box.box-brand * {
+    transition: color .5s ease-in-out;
+    text-decoration: none;
+}
+
+.box.box-brand img {
+    width: 42px;
+    height: 42px;
+}
+
+.box-menu-toggler {
+    padding: 1rem;
+    float: left;
+    color: #fff;
+    background: #01553b;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+.box-menu-toggler.show {
+    background-color: #006344;;
+}
+
+.box.box-brand .mobile_menu_toggler {
+    width: 48px;
+    height: 48px;
+}
+
+.box-brand-text {
+    color:#fff;
+}
+
+.box-brand-text .box-brand-title {
+    font-size: 30px;
+}
+
+.box-brand-text .box-brand-name {
+    font-size: 13px;
+}
+
+.box-phone-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01553b;
+    border-radius: 50%;
+}
+
+.text-success-light {
+    color: #93be12;
+}
+
+.box.box-brand:hover .box-brand-title  {
+    color: #93be12;
+}
+
+.box.box-brand:hover .box-brand-title .text-success-light  {
+    color: #fff;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Бутеброд */
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#fff;
+    stroke-width:7;
+    stroke-linecap:round;
+}
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+
+/* Бутеброд */
+
+.modal {
+    position: fixed;
+    display: none;
+    top: 98px;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+.modal.modal-left .modal-dialog {
+    max-width: 350px;
+    min-height: calc(100vh - 0px);
+}
+
+@media only screen and (max-width: 576px) {
+    .modal.modal-left .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+
+.modal.modal-left.show .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal.modal-left .modal-dialog {
+    margin: 0 auto 0 0;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+.modal.modal-left .modal-content {
+    overflow-y: auto;
+    height: 100vh;
+    border-radius: 0;
+    background: #006344;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    outline: 0;
+}
+
+
+/* Меню в баре */
+
+.box.box-navigation.box-navigation-service {
+    border-top: 1px solid #01553b;
+    border-bottom: 1px solid #01553b;
+}
+
+.box.box-navigation.box-navigation-service .nav-link {
+    line-height: 32px;
+}
+
+.box.box-navigation.box-navigation-mainmenu .nav-link {
+    line-height: 26px;
+}
+
+.box.box-navigation.box-navigation-mainmenu .nav-item .svg-menu .item-icon {
+    color: #fff !important;
+    font-size: 2rem !important;
+}
+
+
 /* Новое основное меню */
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav .nav-item .nav-link {
+    padding: .75rem 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color .3s ease-in-out;
+}
+
+.nav .nav-item .nav-link:hover {
+    color: #93be12;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    color: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-green-light {
+    background-color:  #93be12;
+    font-size: 14px;
+    color: #ffffff;
+    transition: background-color.3s ease-in-out;
+}
+
+.btn-green-light:hover {
+    background-color: #83ae02;
+}
+
+.btn-pills {
+    border-radius: 2rem;
+}
+
+.box.box-phone .box-phone-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 24px;
+}
 
 body .page_container .inner_header {
     position: relative;
@@ -4916,6 +5175,7 @@ body .page_container .inner_header {
     .navbar .navbar-nav .nav-item .nav-link {
         width: 100%;
     }
+
     .navbar .navbar-nav .nav-item {
         width: 100%;
     }
@@ -4925,7 +5185,9 @@ body .page_container .inner_header {
     .navbar .navbar-nav .nav-item .nav-link {
         width: 300px;
     }
+
     .navbar .navbar-nav .nav-item {
         width: 200px;
     }
 }
+

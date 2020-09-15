@@ -34,3 +34,5 @@
     // pls don't forget to change to your domain :)
     injectSvgSprite('{'assets_url' | option}/template/icons/svg-sprite.svg');
 </script>
+
+{'callibri' | option}
