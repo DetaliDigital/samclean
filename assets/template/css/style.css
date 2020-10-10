@@ -5123,6 +5123,15 @@ body .page_container .inner_header {
     font-size: 15px;
 }
 
+.dropdown-menu.megamenu .dropdown-menu-title > a {
+    color: #4B5753;
+    text-decoration: none;
+}
+
+.dropdown-menu.megamenu .dropdown-menu-title > a:hover {
+    color:#C2A887;
+}
+
 .dropdown-menu.megamenu .megamenu-list-item {
     display: block;
 }

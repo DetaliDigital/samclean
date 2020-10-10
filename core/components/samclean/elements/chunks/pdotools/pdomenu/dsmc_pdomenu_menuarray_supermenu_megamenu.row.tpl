@@ -1,6 +1,12 @@
 {if $item['children'] ?}
 <div class="col-3">
-    <div class="dropdown-menu-title">{$item['menutitle'] ?: $item['pagetitle']}</div>
+    <div class="dropdown-menu-title">
+        {if $item['searchable'] == 0}
+        {$item['menutitle'] ?: $item['pagetitle']}
+        {else}
+        <a class="" href="{$item['uri']}">{$item['menutitle'] ?: $item['pagetitle']}</a>
+        {/if}
+    </div>
     <ul class="megamenu-list list-unstyled">
         {foreach $item['children'] as $children}
             {set $children['level'] = $item['level'] + 1}

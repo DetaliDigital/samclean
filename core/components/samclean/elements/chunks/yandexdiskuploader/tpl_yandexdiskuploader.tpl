@@ -6,7 +6,7 @@
         <br>
         <p class="uploader-desc">
             для загрузки, <br>
-            перетените его <br>
+            перетяните его <br>
             сюда.
         </p>
         <div class="dz-message">Прикрепить файлы

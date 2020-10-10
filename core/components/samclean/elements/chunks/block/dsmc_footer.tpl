@@ -72,7 +72,7 @@
                         <div class="col-lg-4 col-md-4">
                             <p class="phone flex flex column flex-wrap">
                                 <a href="tel:+78123091691" class="d-block" rel="nofollow">+7 (812) 309-16-91</a>
-                                <a href="tel:+78123091691" class="d-block" rel="nofollow">+7 (812) 309-16-91</a>
+                                <a href="tel:+79117477372" class="d-block" rel="nofollow">+7 (911) 747-73-72</a>
                             </p>
                         </div>
                         <div class="col-lg-4 col-md-4">

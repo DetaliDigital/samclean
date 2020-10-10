@@ -196,8 +196,8 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
                                 <p class="phone flex flex column flex-wrap">
-                                    <a href="tel:+78123091691" class="d-block" rel="nofollow">+7 (812) 309-16-91</a>
-                                    <a href="tel:+78123091691" class="d-block" rel="nofollow">+7 (812) 309-16-91</a>
+                                    <a href="tel:{'phone' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow">{'phone' | option}</a>
+                                    <a href="tel:{'phone_mobile' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow">{'phone_mobile' | option}</a>
                                 </p>
                             </div>
                             <div class="col-lg-4 col-md-4">
