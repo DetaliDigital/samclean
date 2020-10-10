@@ -210,10 +210,13 @@
                                     пр. Энгельса 136, к. 1</p>
                             </div>
                             <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row align-items-start">
-                                <a href="https://yandex.ru/maps/org/samklin/201...50079&z=14" rel="nofollow"
+                                {if 'config-yandex-review' | option ?}
+                                <a href="{'config-yandex-review' | option}" rel="nofollow"
                                    class="btn btn-social my-2 ml-md-0 mr-md-2 mx-0">
                                     <span class="text-danger">Я</span>ндекс<span class="text-warning">Отзывы</span></a>
-                                <a href="https://vk.com/samclean" rel="nofollow"
+                                {/if}
+                                {if 'vk' | option ?}
+                                <a href="{'vk' | option}" rel="nofollow"
                                    class="btn btn-social my-2 mx-md-2 mx-0">
                                 <span class="btn-inner--icon">
                                     <svg class="svg-icon">
@@ -221,7 +224,9 @@
                                     </svg>
                                 </span>
                                     Мы в контакте</a>
-                                <a href="https://www.youtube.com/channel/UCSztG...xYbEx6zJtw" rel="nofollow"
+                                {/if}
+                                {if 'youtube' | option ?}
+                                <a href="{'youtube' | option}" rel="nofollow"
                                    class="btn btn-social my-2 mr-md-0 ml-md-2 mx-0">
                                 <span class="btn-inner--icon">
                                     <svg class="svg-icon">
@@ -229,6 +234,7 @@
                                     </svg>
                                 </span>
                                     Youtube</a>
+                                {/if}
                             </div>
                             <div class="col-lg-4 col-md-12 mt-4 mt-lg-0 d-flex align-items-center">
                                 <p class="note py-0">

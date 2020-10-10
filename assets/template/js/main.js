@@ -281,6 +281,21 @@ $(document).ready(function() {
 			  });
 	}
 
+	if ($(".reviews_slider").length) {
+		var br_slider = $(".reviews_slider").slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: false,
+			//autoplay: true,
+			// autoplaySpeed: 2000,
+			slide: ".card-review",
+			respondTo:'slider',
+			swipeToSlide: true,
+			touchThreshold: 25
+		});
+	}
+
 
 	//--
 

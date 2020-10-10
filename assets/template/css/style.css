@@ -52,6 +52,12 @@
     padding: 0;
 }
 
+/* Фикс ссылок*/
+
+.main a {
+    color: #006344;
+}
+
 p {
     -webkit-text-size-adjust: none !important;
     padding: 0;
@@ -5178,6 +5184,87 @@ body .page_container .inner_header {
 .svg-icon.navbar-icon {
     width: 1.5rem;
     height: 1.5rem
+}
+
+/* Отзывы */
+
+.the_content_section img {
+    display: block;
+    max-width: 100%;
+}
+
+.card-review .image img {
+    border: 5px solid #f4f4f4;
+    border-radius: 3px;
+}
+
+.card-review .review-content .title {
+    font-size: 19px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.service-reviews .review-all {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.service-reviews .review-all a.text-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.service-reviews .review-all .label {
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .title.border-bottom-dashed {
+        border-bottom: none;
+    }
+    .card-review .image {
+        display:flex;
+        justify-content: center;
+    }
+
+    .service-reviews .slick-slider .slick-prev {
+        top: 20%;
+        left: 0 !important;
+    }
+
+    .service-reviews .slick-slider .slick-next {
+        top: 20%;
+        right: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .card-review .image {
+        display:flex;
+        justify-content: center;
+    }
+
+    .service-reviews .slick-slider .slick-prev {
+        top: 20%;
+        left: 0 !important;
+    }
+
+    .service-reviews .slick-slider .slick-next {
+        top: 20%;
+        right: 0 !important;
+    }
+
+    .service-reviews .review-all {
+        text-align: center;
+    }
+
+
 }
 
 @media only screen and (min-width: 1200px) {

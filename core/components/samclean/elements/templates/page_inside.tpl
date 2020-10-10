@@ -17,13 +17,15 @@
 
                     {$_modx->resource.content}
 
+                    {if $_modx->user.id > 0}
+                    {'!infoBlock' | snippet : [
+                    'id' => 1
+                    ]}
+                    {/if}
 
                     {include 'section_price'}
                     {include 'content_portfolio'}
                     {include 'advantages_block'}
-
-
-
 
 
                     {*
