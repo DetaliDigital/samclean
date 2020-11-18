@@ -5,7 +5,7 @@
         <p class="form_title">Остались вопросы?</p>
 
         <p>
-            Оставьте свой номер телефона, наш специалист свяжется с вами и все расскажет
+            Оставьте свой номер телефона, мы свяжемся с вами и все расскажем
         </p>
 
         <form method="post" class="mvtForm2" id="{$formID}_form">
@@ -29,7 +29,7 @@
                         <polyline points="1 9 7 14 15 4"></polyline>
                     </svg>
 
-                    <span>Я согласен с условиями <a href="/policy" target="_blank" rel="nofollow">политики конфиденциальности</a></span>
+                    <span>Я согласен с <a href="/policy" target="_blank" rel="nofollow">политикой конфиденциальности</a></span>
                 </label>
             </div>
 

@@ -21,7 +21,7 @@
 
 {include 'head'}
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
 {include 'section_callback_popup'}
 
@@ -178,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-block py-5 bg-gray">
+        <div class="footer-block py-5 bg-gray" itemscope itemtype="https://schema.org/Organization">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 py-2 mb-4 md-lb-0 d-flex flex-column flex-md-grid justify-content-md-start align-items-md-start align-items-center">
@@ -186,7 +186,7 @@
                             <a href="/">
                                 <img src="/assets/template/img/logo_footer1.png"
                                      data-src="/assets//template/img/logo_footer1.png" class=""
-                                     alt=""><span><b><i>Sam</i>Clean</b></span>
+                                     alt=""><span itemprop="name"><b><i>Sam</i>Clean</b></span>
                             </a>
                         </div>
                         <p class="py-1">© 2020 samclean.ru, Все права защищены</p>
@@ -196,8 +196,8 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
                                 <p class="phone flex flex column flex-wrap">
-                                    <a href="tel:{'phone' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow">{'phone' | option}</a>
-                                    <a href="tel:{'phone_mobile' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow">{'phone_mobile' | option}</a>
+                                    <a href="tel:{'phone' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow"><span itemprop="telephone">{'phone' | option}</span></a>
+                                    <a href="tel:{'phone_mobile' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow"><span itemprop="telephone">{'phone_mobile' | option}</span></a>
                                 </p>
                             </div>
                             <div class="col-lg-4 col-md-4">
@@ -205,8 +205,8 @@
                                     <a href="mailto:info@samclean.ru" rel="nofollow"><span>info@samclean.ru</span></a>
                                 </p>
                             </div>
-                            <div class="col-lg-4 col-md-4">
-                                <p class="adress">
+                            <div class="col-lg-4 col-md-4" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <p class="adress" itemprop="streetAddress">
                                     пр. Энгельса 136, к. 1</p>
                             </div>
                             <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row align-items-start">

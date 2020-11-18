@@ -52,7 +52,7 @@
             <section class="middle_banner_section" {if 'standard' | mobiledetect or 'tablet' | mobiledetect} style="background('{$_modx->resource.section_middle_banner_background | phpthumbon : "w=1792&q=70"}')" {/if}>
                 <div class="inner_section clearfix">
                     <div class="middle_banner">
-                        <div class="middle_banner_content">
+                        <div class="middle_banner_content" itemprop="mainContentOfPage">
                             <h1>{$_modx->resource.section_middle_banner_title}</h1>
                             {$_modx->resource.section_middle_banner_сontent}
 
@@ -244,7 +244,7 @@
                         {/if}
 
                         {if $_modx->resource.section_clients_link_more ?}
-                            <a class="orange_ref" href="{$_modx->resource.section_clients_link_more | url}">Узнать больше</a>
+                           <!--/<a class="orange_ref" href="{$_modx->resource.section_clients_link_more | url}">Узнать больше</a>-->
                         {/if}
 
                         <a class="fancy button" href="#call_popup">Заявка на сотрудничество</a>

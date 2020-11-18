@@ -21,10 +21,10 @@
     </div>
     <div class="review-all py-4 my-5">
         <div class="d-flex align-items-center row">
-            <div class="col-12 col-xl-3 label">Больше отзывов на:</div>
+            <div class="col-12 col-xl-3 label">Читать остальные на:</div>
             <div class="col-12 col-xl-2">
                 <a href="https://yandex.ru/profile/201295199127" rel="nofollow" class="my-2 ml-md-0 mr-md-2 mx-0 text-link">
-                    <span class="text-danger">Я</span>ндекс<span class="text-warning">Отзывы</span></a>
+                    <span class="text-danger">Я</span>ндекс<span class="text-warning">Карты</span></a>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <div class="breadcrumbs_block">
-    <div class="inner_section">
+    <div class="inner_section" itemprop="breadcrumb">
 
         {'pdoCrumbs' | snippet : [
         'tplWrapper' => '@INLINE <ul class="breadcrumbs">{$output}</ul>',

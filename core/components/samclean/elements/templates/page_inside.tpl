@@ -9,12 +9,12 @@
 
                 {include 'page.header'}
 
-                <div class="the_content_section_left">
+                <div class="the_content_section_left" itemprop="mainContentOfPage">
 
                     {include 'section_top_slider'}
                     {include "introtext"}
                     {include 'section_top_hobnail'}
-
+                    
                     {$_modx->resource.content}
 
                     {if $_modx->user.id > 0}
@@ -23,7 +23,7 @@
                     ]}
                     {/if}
 
-                    {include 'section_price'}
+                    {* {include 'section_price'} *}
                     {include 'content_portfolio'}
                     {include 'advantages_block'}
 

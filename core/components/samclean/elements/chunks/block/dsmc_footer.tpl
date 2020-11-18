@@ -94,6 +94,7 @@
                                     </svg>
                                 </span>
                                 Мы в контакте</a>
+                                
                             <a href="https://www.youtube.com/channel/UCSztG...xYbEx6zJtw" rel="nofollow" class="btn btn-social my-2 mr-md-0 ml-md-2 mx-0">
                                 <span class="btn-inner--icon">
                                     <svg class="svg-icon">
