@@ -193,14 +193,14 @@
                         <a href="policy/" class="policy py-1" rel="nofollow"><span>Политика конфидициальности</span></a>
                     </div>
                     <div class="col-lg-9 col-md-12 mx-5 mx-md-0">
-                        <div class="row">
+                        <div class="row d-flex justify-content-xl-between">
                             <div class="col-lg-4 col-md-4">
                                 <p class="phone flex flex column flex-wrap">
                                     <a href="tel:{'phone' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow"><span itemprop="telephone">{'phone' | option}</span></a>
                                     <a href="tel:{'phone_mobile' | option | preg_replace:'/[^0-9.+]|/': ''}" class="d-block" rel="nofollow"><span itemprop="telephone">{'phone_mobile' | option}</span></a>
                                 </p>
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-3 col-md-4">
                                 <p class="mail">
                                     <a href="mailto:info@samclean.ru" rel="nofollow"><span>info@samclean.ru</span></a>
                                 </p>
@@ -209,7 +209,7 @@
                                 <p class="adress" itemprop="streetAddress">
                                     пр. Энгельса 136, к. 1</p>
                             </div>
-                            <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row align-items-start">
+                            <div class="col-lg-auto col-md-12 d-flex flex-column flex-md-row align-items-start">
                                 {if 'config-yandex-review' | option ?}
                                 <a href="{'config-yandex-review' | option}" rel="nofollow"
                                    class="btn btn-social my-2 ml-md-0 mr-md-2 mx-0">
@@ -219,7 +219,7 @@
                                 <a href="{'vk' | option}" rel="nofollow"
                                    class="btn btn-social my-2 mx-md-2 mx-0">
                                 <span class="btn-inner--icon">
-                                    <svg class="svg-icon">
+                                    <svg class="svg-icon social">
                                         <use xlink:href="#icon-vk"></use>
                                     </svg>
                                 </span>
@@ -227,18 +227,28 @@
                                 {/if}
                                 {if 'youtube' | option ?}
                                 <a href="{'youtube' | option}" rel="nofollow"
-                                   class="btn btn-social my-2 mr-md-0 ml-md-2 mx-0">
+                                   class="btn btn-social my-2 mx-md-2 ml-md-2 mx-0">
                                 <span class="btn-inner--icon">
-                                    <svg class="svg-icon">
+                                    <svg class="svg-icon social">
                                         <use xlink:href="#icon-youtube"></use>
                                     </svg>
                                 </span>
                                     Youtube</a>
                                 {/if}
+                                {if 'instagram' | option}
+                                <a href="{'instagram' | option}" rel="nofollow"
+                                   class="btn btn-social my-2 mr-md-0 ml-md-2 mx-0">
+                                <span class="btn-inner--icon">
+                                    <svg class="svg-icon social">
+                                        <use xlink:href="#icon-instagram"></use>
+                                    </svg>
+                                </span>
+                                    Instagram</a>
+                                {/if}
                             </div>
-                            <div class="col-lg-4 col-md-12 mt-4 mt-lg-0 d-flex align-items-center">
+                            <div class="col-lg-auto col-md-12 mt-4 mt-xl-0 d-flex align-items-center">
                                 <p class="note py-0">
-                                    <a href="#">Разработка сайта - <img src="assets/template/img/dsmc_logo.png" alt=""></a>
+                                    <a href="#">Разработка  сайта - <img src="assets/template/img/dsmc_logo.png" alt=""></a>
                                 </p>
                             </div>
                         </div>

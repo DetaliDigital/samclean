@@ -4631,15 +4631,16 @@ footer .btn.btn-social {
 
 footer .btn.btn-social .btn-inner--icon {
     margin-right: 0.5rem;
+    display: flex;
 }
 
 footer .footer-block.bg-gray {
     background: #FCFCFC;
 }
 
-.svg-icon {
+.svg-icon.social {
     width: 16px;
-    height: 10px;
+    height: 16px;
 }
 
 .text-danger {
