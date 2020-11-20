@@ -404,7 +404,7 @@ border-radius:20px;letter-spacing:0.4px;}
 
 /*inner pages*/
 
-.inner_page_container .main {padding-top:25px;border-top:1px solid #e1e1e1;}
+.inner_page_container .main {padding-top:25px}
 .inner_page_container .header_menu_block {padding-top:5px;}
 
 .breadcrumbs_block {    padding: 0 0 14px;}

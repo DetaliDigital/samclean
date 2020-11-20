@@ -9,6 +9,10 @@
 
                 {include 'page.header'}
 
+                {if $_modx->user.id > 0}
+                    {include 'service_top_block'}
+                {/if}
+
                 <div class="the_content_section_left" itemprop="mainContentOfPage">
 
                     {include 'section_top_slider'}

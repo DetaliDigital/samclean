@@ -63,6 +63,13 @@ $(document).ready(function() {
 	});
 	//--
 
+	//text toggling 2
+	$('.service_top_block .caption_description a').click(function(e) {
+		e.preventDefault();
+		$(this).closest('.caption_description').toggleClass('active');
+	});
+	//--
+
 
 	//to cart button
 	$('.catalog_block_item .to_cart_button').click(function(e) {

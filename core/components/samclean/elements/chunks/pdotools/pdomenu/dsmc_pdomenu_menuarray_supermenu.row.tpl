@@ -44,6 +44,9 @@
                             </div>
                         </div>
                     </div>
+                    {'!infoBlock' | snippet : [
+                    'id' => '2',
+                    ]}
             </li>
         {/if}
     {else}
