@@ -45,6 +45,11 @@
                     {include 'section_horizontal_form_block'}
 
                     *}
+
+                    {if $_modx->user.id > 0}
+                    {include 'section_staff'}
+                    {/if}
+
                 </div><!--/the_content_section_left-->
 
                 <div class="the_content_section_right">

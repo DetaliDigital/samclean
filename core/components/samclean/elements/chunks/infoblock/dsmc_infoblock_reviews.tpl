@@ -1,10 +1,9 @@
-{foreach $positions as $position}
 <section class="service-reviews title-transform-none my-5">
-    <h2>{$position.name}</h2>
+    <h2>{$name}</h2>
     <div class="row">
         <div class="col-lg-10 mx-auto">
             <div class="reviews_slider">
-                {foreach $position.items as $item}
+                {foreach $items as $item}
                 <div class="card-review d-flex flex-column flex-xl-row">
                     <div class="image col-12 col-xl-3">
                         <img src="{$item.image ?: 'config_no_image' | option}">
@@ -29,4 +28,3 @@
         </div>
     </div>
 </section>
-{/foreach}
