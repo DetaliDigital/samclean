@@ -9,9 +9,9 @@
 
                 {include 'page.header'}
 
-                {if $_modx->user.id > 0}
+                
                     {include 'service_top_block'}
-                {/if}
+              
 
                 <div class="the_content_section_left" itemprop="mainContentOfPage">
 
@@ -45,10 +45,6 @@
                     {include 'section_horizontal_form_block'}
 
                     *}
-
-                    {if $_modx->user.id > 0}
-                    {include 'section_staff'}
-                    {/if}
 
                 </div><!--/the_content_section_left-->
 
