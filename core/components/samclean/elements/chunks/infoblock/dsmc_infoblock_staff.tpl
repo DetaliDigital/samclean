@@ -14,7 +14,7 @@
                         <ul class="list list--inline">
                             {if 'config_viber' | option ?}
                             <li class="list--inline--item">
-                                <a href="{'config_viber' | option}" class="social social--circle social--viber">
+                                <a href="{'config_viber' | option}" class="social social--circle social--viber" rel="nofollow">
                                     <svg class="svg--icon social--sm">
                                         <use xlink:href="#icon-viber-2"></use>
                                     </svg>
@@ -23,7 +23,7 @@
                             {/if}
                             {if 'config_telegram' | option ?}
                             <li class="list--inline--item">
-                                <a href="{'config_telegram' | option}" class="social social--circle social--telegram">
+                                <a href="{'config_telegram' | option}" class="social social--circle social--telegram" rel="nofollow">
                                     <svg class="svg--icon social--sm">
                                         <use xlink:href="#icon-telegram-2"></use>
                                     </svg>
@@ -32,7 +32,7 @@
                             {/if}
                             {if 'config_instagram' | option ?}
                             <li class="list--inline--item">
-                                <a href="{'config_instagram' | option}" class="social social--circle social--instagram">
+                                <a href="{'config_instagram' | option}" class="social social--circle social--instagram" rel="nofollow">
                                     <svg class="svg--icon social--sm">
                                         <use xlink:href="#icon-instagram-2"></use>
                                     </svg>
@@ -41,7 +41,7 @@
                             {/if}
                             {if 'config_vk' | option ?}
                             <li class="list--inline--item">
-                                <a href="{'config_vk' | option}" class="social social--circle social--vk">
+                                <a href="{'config_vk' | option}" class="social social--circle social--vk" rel="nofollow">
                                     <svg class="svg--icon social--sm">
                                         <use xlink:href="#icon-vk-2"></use>
                                     </svg>
@@ -50,7 +50,7 @@
                             {/if}
                             {if 'config_whatsapp' | option ?}
                             <li class="list--inline--item">
-                                <a href="{'config_whatsapp' | option}" class="social social--circle social--whatsapp">
+                                <a href="{'config_whatsapp' | option}" class="social social--circle social--whatsapp" rel="nofollow">
                                     <svg class="svg--icon social--sm">
                                         <use xlink:href="#icon-whatsapp-2"></use>
                                     </svg>
