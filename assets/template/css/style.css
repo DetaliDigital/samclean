@@ -3263,19 +3263,9 @@ a.button.leave_request_button {
     font-size: 0;
     padding-bottom: 40px;
     padding-top: 15px;
+    width: 100%;
 }
 
-.portfolio_item {
-    width: 264px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 40px;
-    margin-right: 28px;
-}
-
-.portfolio_item:nth-child(4n+4) {
-    margin-right: 0;
-}
 
 .portfolio_item .img {
     width: 100%;
@@ -5424,6 +5414,49 @@ body .page_container .inner_header {
     outline: none;
 }
 
+
+/* Paginations */
+
+.msearch2 .mse2_pagination {
+    width: 100%;
+}
+
+.msearch2 .pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+.msearch2 .pagination li a, .msearch2 .pagination li span {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .5rem .75rem;
+    color: #006344;
+    font-weight: 600;
+    transition: color .3s ease-in-out;
+    display: flex;
+    height: 100%;
+    line-height: 1.2;
+}
+
+.msearch2 .pagination li a:hover {
+    color: #f9ae1f;
+}
+
+.msearch2 .pagination li.active a {
+    background-color: #006344;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease-in-out;
+}
+
+.msearch2 .pagination li.active a:hover {
+    background-color: #f9ae1f;
+}
 
 /* Section Staff */
 

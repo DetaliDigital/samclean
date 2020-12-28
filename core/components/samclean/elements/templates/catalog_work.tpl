@@ -8,21 +8,25 @@
 
                 {include 'page.header'}
 
-                [[-{include 'portfolio_tags'}]]
-
                 {'!mFilter2' | snippet : [
                 'tpl' => 'tpl.portfolio.item',
                 'element' => 'ms2GalleryResources',
                 'typeOfJoin' => 'left',
-                'includeThumbs' => 'medium'
+                'includeThumbs' => 'medium',
+                'limit' => 16,
                 'includeOriginal' => 1,
-                'parents' => $_modx->resource.id,
+                'parents' => 'id' | resource,
                 'filters' =>  'tv|tags',
                 'sortby' => ['publishedon' => 'DESC'],
                 'tplOuter' => 'tpl.mFilter2.outer.dtls',
-                'tplFilter.outer.default' => 'tpl.mFilter2.filter.outer.dtls'
-                'tplFilter.row.default' => 'tpl.mFilter2.filter.checkbox.dtls'
-                'ajaxMode' => 'scroll',
+                'tplFilter.outer.default' => 'tpl.mFilter2.filter.outer.dtls',
+                'tplFilter.row.default' => 'tpl.mFilter2.filter.checkbox.dtls',
+                'tplPageWrapper' => '@INLINE
+                <div class="pagination"><ul class="pagination">{$prev}{$pages}{$next}</ul></div>',
+                'tplPagePrev' => '@INLINE <li class="control"><a href="{$href}"><i class="fas fa-angle-left"></i></a></li>',
+                'tplPageNext' => '@INLINE <li class="control"><a href="{$href}"><i class="fas fa-angle-right"></i></a></li>'
+                'tplPagePrevEmpty' => '@INLINE <li class="disabled"><span><i class="fas fa-angle-left"></i></span></li>',
+                'tplPageNextEmpty' => '@INLINE <li class="disabled"><span><i class="fas fa-angle-right"></i></span></li>'
                 ]}
             </div>
         </section><!--/the_content_section-->

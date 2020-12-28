@@ -538,7 +538,7 @@ margin-right:2.5%;box-sizing: border-box;    margin-bottom: 10px;min-height:34px
 
 body.compensate-for-scrollbar {    overflow: visible;margin-right: 0;}
 
-.portfolio_block .portfolio_item {width:23%;margin-right:2.33%;}
+.portfolio_block .portfolio_item {margin-bottom: 2rem}
 .portfolio_block .portfolio_item:nth-child(4n+4) {margin-right:0;}
 .portfolio_block .portfolio_item .img {height:auto;margin-bottom: 0;}
 .portfolio_block .portfolio_item.hover .img a:after {padding:0;background-image:none;content:"";}

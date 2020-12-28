@@ -16,19 +16,19 @@
 
 
                     {'!ms2Gallery' | snippet : [
-                    'tpl' => 'tpl.gallery.row.do'
+                    'tpl' => 'tpl.gallery.row.do',
                     'tags' => 'До'
                     'getTags' => 1
                     ]}
 
                     {'!ms2Gallery' | snippet : [
-                    'tpl' => 'tpl.gallery.row.posle'
-                    'tags' => 'После'
+                    'tpl' => 'tpl.gallery.row.posle',
+                    'tags' => 'После',
                     'getTags' => 1
                     ]}
 
                     {'!ms2Gallery' | snippet : [
-                    'tpl' => 'tpl.gallery.row.no'
+                    'tpl' => 'tpl.gallery.row.no',
                     'getTags' => 1
                     ]}
 
