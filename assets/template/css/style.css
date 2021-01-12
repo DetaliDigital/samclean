@@ -2103,7 +2103,7 @@ footer p.made_by a {
 }
 
 .the_form_item_accept label {
-    display: block;
+    display: inline-flex;
     margin: 0;
     padding: 0;
 }
