@@ -322,7 +322,9 @@
 {$_modx->regClientScript("/assets/template/js/codyhouse.js")}
 {$_modx->regClientScript("/assets/template/js/jquery.mobile.custom.min.js")}
 
+
 {'!ym' | snippet}
+
 
 <script>
     function injectSvgSprite(path) {
