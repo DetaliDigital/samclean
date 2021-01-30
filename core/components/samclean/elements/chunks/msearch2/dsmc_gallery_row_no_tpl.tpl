@@ -1,5 +1,5 @@
 {if count($files) >= 1}
-    <div class="portfolio_block row">
+    <div class="portfolio_block row py-0">
         {foreach $files as $file}
             {if $file.tags == ''}
                 <div class="portfolio_item col-md-6 col-lg-4 hover">

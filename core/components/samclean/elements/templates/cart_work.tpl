@@ -39,7 +39,7 @@
 
                     {if $_modx->resource.section_bottom_id ?}
                         <div class="content_portfolio">
-                            <h2>Портфолио</h2>
+                            <h2>Похожие работы</h2>
 
                             <div class="content_portfolio_inner">
                                 <div class="content_portfolio_slider">
