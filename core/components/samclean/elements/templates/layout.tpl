@@ -135,49 +135,123 @@
 
 
     <footer class="footer">
-        <div class="footer-block py-5">
-            <div class="container">
-                <div class="row px-3 px-lg-0">
-
-
-                    {foreach $menu as $item}
-                        {set $item['level'] = 1}
-                        {$_modx->getChunk('dsmc.pdoMenu.menuArray.row' , ['item' => $item])}
-                    {/foreach}
-                    <div class="col-lg-3 col-md-6">
-                        <div class="collapse">
-                            <a href="#" class="footer-title block-toggler">О компании
-                                <span class="block-toggler-icon"></span>
-                            </a>
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a href="{3 | url}" class="nav-link">Наши работы</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{177 | url}" class="nav-link">Цены</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{178 | url}" class="nav-link">Условия</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{8 | url}" class="nav-link">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mt-4 col-md-6">
-                        <ul class="nav nav-resources flex-column">
+<div class="footer-block py-5">
+        <div class="container">
+            <div class="row px-3 px-lg-0">
+			
+			    <div class="col-lg-3 col-md-6">
+                    <div class="collapse">
+                        <a href="{10 | url}" class="footer-title block-toggler">Химчистка мебели
+                            <span class="block-toggler-icon"></span>
+                        </a>
+                        <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a href="{12 | url}" class="nav-link">Мытье окон</a>
+                                <a href="{183 | url}" class="nav-link">Химчистка кресел</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{13 | url}" class="nav-link">Мойка витрин</a>
+                                <a href="{179 | url}" class="nav-link">Химчистка диванов</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{180 | url}" class="nav-link">Химчистка стульев</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{228 | url}" class="nav-link">Удаление запахов</a>
+                            </li>
+							<li class="nav-item">
+                                <a href="{261 | url}" class="nav-link">От запаха табака</a>
+                            </li>
+							<li class="nav-item">
+                                <a href="{229 | url}" class="nav-link">После животных</a>
+                            </li>
+							<li class="nav-item">
+                                <a href="{230 | url}" class="nav-link">Мягкие игрушки</a>
+                            </li>
+                            <li class="nav-item">
+                                &nbsp;
+                            </li>
+                        </ul>
+                    </div>
+                </div>				
+				<div class="col-lg-3 col-md-6">
+                    <div class="collapse">
+                        <a href="{211 | url}" class="footer-title block-toggler">Ковровые покрытия
+                            <span class="block-toggler-icon"></span>
+                        </a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="{11 | url}" class="nav-link">Химчистка ковров</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{212 | url}" class="nav-link">Химчистка ковролина</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{213 | url}" class="nav-link">Паласы и ковровые дорожки</a>
+                            </li>
+                            <li class="nav-item">
+                                &nbsp;
                             </li>
                         </ul>
                     </div>
                 </div>
+				
+				<div class="col-lg-3 col-md-6">
+                    <div class="collapse">
+                        <a href="{9 | url}" class="footer-title block-toggler">Чистка матрасов
+                            <span class="block-toggler-icon"></span>
+                        </a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="{234 | url}" class="nav-link">Ортопедические</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{219 | url}" class="nav-link">Химчистка от мочи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{218 | url}" class="nav-link">Детские матрасы</a>
+                            </li>
+                            <li class="nav-item">
+                                &nbsp;
+                            </li>
+                        </ul>
+                    </div>
+                </div>			
+				<div class="col-lg-3 col-md-6">
+                    <div class="collapse">
+                        <a href="{2 | url}" class="footer-title block-toggler">О компании
+                            <span class="block-toggler-icon"></span>
+                        </a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="{3 | url}" class="nav-link">Наши работы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{177 | url}" class="nav-link">Цены</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{178 | url}" class="nav-link">Условия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{8 | url}" class="nav-link">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                &nbsp;
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4 col-md-6">
+                    <ul class="nav nav-resources flex-column">
+                        <li class="nav-item">
+                            <a href="{12 | url}" class="nav-link">Мытье окон</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{13 | url}" class="nav-link">Мойка витрин</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
         <div class="footer-block py-5 bg-gray" itemscope itemtype="https://schema.org/Organization">
             <div class="container">
                 <div class="row">
